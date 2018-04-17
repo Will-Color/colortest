@@ -1,18 +1,20 @@
 <script src="https://colorcodearea-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
 
 
-
 <script>
     $Lightning.use("c:LightningOutTest",
         function(){
             $Lightning.createComponent(
                 "c:LightningOutTest",
                 {}, 
-                "divtest"                
-        );},
+                "divtest",
+                    function(){
+                    console.log("running")};
+        );
+        },
             "https://colorcodearea-dev-ed.lightning.force.com",
             "00D1r000000fkPlEAI!AQsAQBwHHmBrmv7qseWVGcDRIMxu3tULb5GnUMhbZcgDOXApEizIfOhswXDBeVyyMBS84aRM4KFfMnOnsnysnOYkZi10lujR"
-            );
+        );
 </script>
 
-<div id="divtest"></div>
+<div id="divTest"></div>
