@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
+<script>
+    $Lightning.use("c:LightningOutTest",
+        function(){
+            $Lightning.createComponent(
+                "c:LightningOutTest",
+                {}, 
+                "divtest"
+            );
+        }
+    );
+</script>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-<H1> 
-Click <a href="http://www.colorconsultancy.co.uk">here</a> to go to Website.
- <a href="javascript:window.open('http://www.colorconsultancy.co.uk', 'testwindow', 'width=1600,height=1000');">Go to website</a>
-  </H1>  
-</body>
-</html>
+<div id="divTest"></div>
