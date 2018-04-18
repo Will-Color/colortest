@@ -1,2 +1,25 @@
-<iframe src="https://colorlexout-developer-edition.eu12.force.com/lexout/" height="300px" width="100%"></iframe>
+<head>
+<script src="https://colorcodearea-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+</head>
+
+<body>
+<script>
+    $Lightning.use("c:LightningOutTest",
+        function(){
+            $Lightning.createComponent(
+                "c:LightningOutTestComp",
+                {}, 
+                "divtest",
+                    function(){
+                    console.log("running");
+                    }
+        );
+        },
+            "https://colorcodearea-dev-ed.lightning.force.com",
+            "3MVG95NPsF2gwOiOep0bQdXrw8PRy6he_pthSVnc14_10kuCxodPSS4EfydZw9045oMChyw7XC9F0Utjw6dYG"
+        );
+</script>
+
+<div id="divtest"></div>
+
 </body>
