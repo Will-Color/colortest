@@ -1,24 +1,25 @@
 <head>
-<script src="https://acosvopay-acosvopaycommunity.cs89.force.com/AcosvoPayLex/lightning/lightning.out.js"></script>
+   <script src="https://acosvopay-acosvopaycommunity.cs89.force.com/AcosvoPayLex/lightning/lightning.out.js"></script>
 </head>
+   
+   <div id="lightning"></div>
 
-<body>
-<script>
-    $Lightning.use("c:Lexout",
-        function(){
-            $Lightning.createComponent(
-                "c:TestRecordPage",
-                {}, 
-                "divtest",
-                    function(){
-                    console.log("running");
-                    }
-        );
-        },
-            "https://testsummer-developer-edition.gus.force.com"
-        );
-</script>
-
-<div id="divtest"></div>
-
-</body>
+   <body>
+   <script>
+       $Lightning.use("c:PaymentGatewayFormDDLexOut",
+         function() {
+             $Lightning.createComponent("c:PaymentGatewayFormDD",
+                                       {},
+                                      "lightning",
+                                      function(){
+                                          console.log("ready!!");
+                                          }
+                                      );
+           },
+           "https://acosvopay-acosvopaycommunity.cs89.force.com"                                                                                                          
+       );
+   </script>
+   
+   
+   
+   </body>
