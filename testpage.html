@@ -1,25 +1,22 @@
 <head>
-   <script src="https://acosvopay-acosvopaycommunity.cs89.force.com/AcosvoPayLex/lightning/lightning.out.js"></script>
+   <script src="https://acosvo--acosvopay.my.salesforce.com/lightning/lightning.out.js"></script>
 </head>
    
+<body>
    <div id="lightning"></div>
+</body>
 
-   <body>
-   <script>
-       $Lightning.use("c:PaymentGatewayFormDDLexOut",
-         function() {
-             $Lightning.createComponent("c:PaymentGatewayFormDD",
-                                       {},
-                                      "lightning",
-                                      function(){
-                                          console.log("ready!!");
-                                          }
-                                      );
-           },
-           "https://acosvopay-acosvopaycommunity.cs89.force.com"                                                                                                          
-       );
-   </script>
-   
-   
-   
-   </body>
+<script>
+   $Lightning.use("c:PaymentGatewayFormDDLexOut",
+       function() {
+       $Lightning.createComponent("c:PaymentGatewayFormDD",
+                                      {},
+                                   "lightning",
+                                   function(){
+                                       console.log("ready!!");
+                                   }
+                                   );
+       },
+       "https://acosvopay-acosvopaycommunity.cs89.force.com"                                                                                                          
+   );
+</script>
