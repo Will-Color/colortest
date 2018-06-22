@@ -5,23 +5,22 @@
 <body>
  <script src="https://edsocforms-edinburgh-social-enterprise.cs85.force.com/LEXOUT/lightning.out.js"></script>
 <script>
-  $Lightning.use("c:LightningOutFieldSetForms",
-      function() {
-      $Lightning.createComponent("c:FieldSetForm",
-                                     {
-                                         "formTitle" : "fill me in pls",
-                                         "objectType" : "fill me in pls",
-                                         "fieldset" : "fill me in pls"
-                                     },
-                                  "lightning",
-                                  function(){
-                                      console.log("ready!!");
-                                  }
-                                  );
-      },
-      "Community Endpoint - fill me in pls"                                                                                                          
-  );
- 
- </script>
-  <div id="lightning"> </div>
-  </body>
+$Lightning.use("c:LightningOutFieldSetForms",
+   function() {
+   $Lightning.createComponent("c:FieldSetForm",
+                                  {
+                                      "formTitle" : "fill me in pls",
+                                      "objectType" : "fill me in pls",
+                                      "fieldset" : "fill me in pls"
+                                  },
+                               "lightning",
+                               function(){
+                                   console.log("ready!!");
+                               }
+                               );
+   },
+   "Community Endpoint - fill me in pls"                                                                                                          
+);
+</script>
+<div id="lightning"> </div>
+</body>
