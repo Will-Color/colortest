@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 
-<header> <script src="https://edsocforms-edinburgh-social-enterprise.cs85.force.com/LEXOUT/lightning/lightning.out.js"></script></header>
+<header> <script src="https://edsocform2-edsocform2.cs85.force.com/lightning/lightning.out.js"></script></header>
 
 <body>
 <div id="lightning"> </div>
@@ -10,10 +10,10 @@ $Lightning.use("c:LightningOutFieldSetForms",
    function() {
    $Lightning.createComponent("c:FieldSetForm",
                                   {
-                                      "formTitle" : "Form Title",
+                                      "formTitle" : "Form Title - Controller From Webpage",
                                       "objectType" : "Membership_Application__c",
-                                      "fieldset" : "New",
-                                      "startHelpText" : "This is some example help text"
+                                      "fieldset" : "ExampleFieldSet",
+                                      "startHelpText" : "This is some example help text at the start of the form! I am controller from hosted webpage!"
                                   },
                                "lightning",
                                function(){
@@ -21,7 +21,7 @@ $Lightning.use("c:LightningOutFieldSetForms",
                                }
                                );
    },
-   "https://edsocforms-edinburgh-social-enterprise.cs85.force.com/LEXOUT"                                                                                                          
+   "https://edsocform2-edsocform2.cs85.force.com"                                                                                                          
 );
 </script>
 
