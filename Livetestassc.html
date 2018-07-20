@@ -1,0 +1,34 @@
+<!-- This script tag is required to load the components, place it in the header of the page-->
+<script src="https://acosvo.my.salesforce.com/lightning/lightning.out.js"></script>
+
+<!-- This div is required, it is where the component is built. Place it where appropriate on the page -->
+<div id="lightning"></div>
+
+<script>
+    /* This var determines which form is loaded
+    valid options: Chair
+                   Full
+                   Associate
+    */
+    var formType = "Associate";
+
+    //This constructs the component
+    $Lightning.use("c:PaymentGatewayFormDDLexOut",
+        function() {
+        $Lightning.createComponent("c:PaymentGatewayFormDD",
+                                        {formtype : formType},
+                                    "lightning",
+                                    function(){
+                                        console.log("ready!!");
+                                    }
+                                    );
+        },
+        "https://acosvo.force.com/AcosvoPayLex"                                                                                                          
+    );
+</script>
+<style>
+    /* This hides the aura error messages from the user */
+    #auraErrorMessage {
+        display: none !important;
+    }
+</style>
