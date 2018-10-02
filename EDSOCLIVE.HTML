@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<header> <script src="https://ese--EdSocForm2.cs85.my.salesforce.com/lightning/lightning.out.js"></script></header>
+
+<body>
+<div id="lightning"> </div>
+
+<script>
+$Lightning.use("c:LightningOutFieldSetForms",
+   function() {
+   $Lightning.createComponent("c:FieldSetForm",
+                                  {
+                                      "formTitle" : "Full Member Form",
+                                      "objectType" : "Membership_Application__c",
+                                      "fieldset" : "Member_Field_Set",
+                                      "startHelpText" : "This is some example help text at the start of the form! I am controller from hosted webpage",
+                                      "displayHelpText" : true,
+                                      "prefillField" : "Other__c",
+                                      "prefillValue" : "value"
+                                   
+                                  },
+                               "lightning",
+                               function(){
+                                   console.log("ready!!");
+                               }
+                               );
+   },
+   "https://edsocform2-edsocform2.cs85.force.com/AppForms"                                                                                                          
+);
+</script>
+
+</body>
