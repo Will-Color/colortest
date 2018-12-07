@@ -1,1 +1,24 @@
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+ 
+<header> <script src="https://acosvo--acosvoevnt.my.salesforce.com/lightning/lightning.out.js"></script></header>
+ 
+<body>
+<div id="lightning"> </div>
+ 
+<script>
+$Lightning.use("c:EventsLightningOut",
+   function() {
+   $Lightning.createComponent("c:EventSearch",
+                                  {},
+                               "lightning",
+                               function(){
+                                   console.log("ready!!");
+                               }
+                               );
+   },
+   "https://acosvoevnt-acosvo.cs109.force.com/AcosvoPayLex"
+);
+</script>
+ 
+</body>
